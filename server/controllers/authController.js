@@ -63,12 +63,17 @@ export const loginUser = AsyncHandler(async (req, res) => {
  * @desc Get All users
  */
 export const getAllUsers = AsyncHandler(async (req, res, next) => {
-  const users = await User.find({}).select("-password");
+  console.log("heloooooo");
+  const users = await User.find().select("-password");
 
-  res.status(200).json({
-    success: true,
-    users,
-  });
+  if (users) {
+    res.status(200).json({
+      success: true,
+      users,
+    });
+  } else {
+    return new Error("No users found");
+  }
 });
 
 /**

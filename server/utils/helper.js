@@ -13,3 +13,9 @@ export const hashPassword = async (password) => {
 export const isPassMatched = async (password, hash) => {
   return await bcrypt.compare(password, hash);
 };
+
+//roles
+export const roles = {
+  admin: 1,
+  user: 0,
+};

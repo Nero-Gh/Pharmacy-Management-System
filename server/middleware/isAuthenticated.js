@@ -3,6 +3,7 @@ import { verifyToken } from "../utils/verifyToken.js";
 const isAuthenticated = (model) => {
   return async (req, res, next) => {
     //get token from header
+
     const headerObj = req.headers;
 
     const token = headerObj?.authorization?.split(" ")[1];
@@ -14,9 +15,11 @@ const isAuthenticated = (model) => {
       //find user
       const user = await model
         .findById(verifiedToken.id)
-        .select("name email password contact role");
+        .select("firstName lastName email password contact role");
       //save the user into req.obj
+
       req.userAuth = user;
+
       next();
     } else {
       const err = new Error("Token Expired or invalid");
