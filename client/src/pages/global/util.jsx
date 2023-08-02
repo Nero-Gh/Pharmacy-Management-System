@@ -11,7 +11,7 @@ import { CgLogOut } from "react-icons/cg";
 // import {N} from "react-router-dom";
 
 export const Menus = [
-  { title: "Dashboard", icon: <AiFillDashboard /> },
+  { title: "Dashboard", icon: <AiFillDashboard />, link: "/dashboard" },
   { title: "Pages", icon: <SiPowerpages /> },
   { title: "Media", spacing: true, icon: <MdPermMedia /> },
   {
@@ -30,3 +30,5 @@ export const Menus = [
   { title: "Setting", icon: <AiFillSetting /> },
   { title: "Logout", icon: <CgLogOut /> },
 ];
+
+export const API_URL = "http://localhost:5000/api";
