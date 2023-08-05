@@ -6,7 +6,7 @@ const Card = ({ title, total, icon }) => {
       <div className="text-5xl ">{icon}</div>
       <div className="card-body sm:flex">
         <h2 className="card-title">{title}</h2>
-        <p className="text-md font-semibold sm:text-2xl ">Ghc {total}</p>
+        <p className="text-md font-semibold sm:text-2xl ">{total}</p>
       </div>
     </div>
   );

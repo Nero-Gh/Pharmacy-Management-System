@@ -4,6 +4,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 import { GiHospital } from "react-icons/gi";
 import { BsChevronDown } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import "../../App.css";
 
 const SideBar = () => {
   const [open, setOpen] = useState(true);
@@ -39,7 +40,7 @@ const SideBar = () => {
       </div>
 
       {/* //Menu Sidebar */}
-      <div className="scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100">
+      <div className="">
         <div>
           <ul className="pt-4">
             {Menus.map((menu, index) => (

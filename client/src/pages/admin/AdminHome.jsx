@@ -14,9 +14,9 @@ const AdminHome = () => {
         </ul>
       </div>
       <div className="flex gap-x-2 flex-col sm:flex-row ">
-        <Card icon={<FcSalesPerformance />} title="Sales" total="200.00" />
-        <Card icon={<FcSalesPerformance />} title="Sales" total="200.00" />
-        <Card icon={<FcSalesPerformance />} title="Sales" total="200.00" />
+        <Card icon={<FcSalesPerformance />} title="Sales" total="Ghc 200.00" />
+        <Card icon={<FcSalesPerformance />} title="Manufacturers" total="4" />
+        <Card icon={<FcSalesPerformance />} title="Medicine" total="20" />
       </div>
       <div className="flex gap-x-2 mt-5 h-[54vh]">
         <div className=" flex-1 shadow-md rounded-sm p-2">
